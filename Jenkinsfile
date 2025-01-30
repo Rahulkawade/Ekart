@@ -73,7 +73,7 @@ pipeline {
             steps{
                 script{
                    withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'dockerhubpwd')]) {
-                   sh 'docker login -u youngminds73 -p ${dockerhubpwd}'}
+                   sh 'docker login -u rahul304 -p ${dockerhubpwd}'}
                    sh 'docker push youngminds73/ekart:latest'
                 }
             }
